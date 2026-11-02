@@ -14,7 +14,7 @@ on:
           - live
       
       delete_namespace:
-        description: 'Also delete the namespace (removes openbao-creds too)'
+        description: '⚠️ IMPORTANT: Also delete the namespace (removes openbao-creds too)'
         type: boolean
         default: false
 
