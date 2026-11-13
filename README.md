@@ -280,7 +280,18 @@ cd go-lxd-vm-dashboard-gha
 git checkout -b feature/my-change
 ```
 
-### 2. Make changes, push and raise a PR
+### 2. Make changes and check locally
+
+If main.go is modified then use **Makefiel**
+The `Makefile` runs Go inside Docker instead of requiring a local toolchain:
+
+```bash
+make init       # first time only
+make tidy       # if modules changed
+make check      # gofmt, go vet, go build
+```
+
+### 3. Push and raise a PR
 
 ```bash
 git add .
